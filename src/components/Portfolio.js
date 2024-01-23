@@ -1,19 +1,18 @@
 import React from 'react'
 import meals from '../assets/portfolio/meals.png'
 import Youtube_clone from '../assets/portfolio/Youtube_clone.png'
-import navbar from '../assets/portfolio/navbar.jpg'
 import movie from '../assets/portfolio/movie.png'
 import grocery_app from '../assets/portfolio/grocery_app.png'
-import booking1 from '../assets/portfolio/booking1.png'
+import comer1 from '../assets/portfolio/ecommer1.jpg'
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id:1,
-            src:meals,
-            link:"https://meals-site.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/Meal-App-for-a-Restuarant/tree/master/src/component"
+            src:comer1,
+            link:"https://e-commerce-website-l0cv.onrender.com/",
+            code:"https://github.com/Ukwubuiwe-Solomon/Mini-E-commerce-app"
 
         },
         {
@@ -30,9 +29,9 @@ const Portfolio = () => {
         },
         {
             id:4,
-            src:booking1,
-            link:"https://booking-app-a018.onrender.com",
-            code:"https://github.com/Ukwubuiwe-Solomon/Order-app"
+            src:meals,
+            link:"https://meals-site.onrender.com/",
+            code:"https://github.com/Ukwubuiwe-Solomon/Meal-App-for-a-Restuarant/tree/master/src/component"
         },
         {
             id:5,
@@ -41,12 +40,7 @@ const Portfolio = () => {
             code:"https://github.com/Ukwubuiwe-Solomon/Youtube-clone-app-html-css"
             
         },
-        {
-            id:6,
-            src:navbar,
-            link:"",
-            code:""
-        }
+       
     ]
 
   return (

@@ -6,6 +6,7 @@ import tailwind from '../assets/tailwind.png'
 import react from '../assets/react.png'
 import nextjs from '../assets/nextjs.png'
 import github from '../assets/github.png'
+import Ts from '../assets/Ts.JPG'
 
 const Experience = () => {
 
@@ -51,6 +52,12 @@ const Experience = () => {
             src:github,
             title:"GitHubL",
             style:"shadow-gray-400"
+        },
+        {
+            id:8,
+            src:Ts,
+            title:"TypeScript",
+            style:"shadow-blue-700"
         }
     ]
   return (

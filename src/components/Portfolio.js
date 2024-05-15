@@ -1,6 +1,6 @@
 import React from 'react'
 import meals from '../assets/portfolio/meals.png'
-import Youtube_clone from '../assets/portfolio/Youtube_clone.png'
+import gym from '../assets/Gym.JPG'
 import movie from '../assets/portfolio/movie.png'
 import grocery_app from '../assets/portfolio/grocery_app.png'
 import comer1 from '../assets/portfolio/ecommer1.jpg'
@@ -13,39 +13,45 @@ const Portfolio = () => {
             id:1,
             src:comer1,
             link:"https://e-commerce-website-l0cv.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/Mini-E-commerce-app"
+            code:"https://github.com/Ukwubuiwe-Solomon/Mini-E-commerce-app",
+            tool:"React, Tailwind Css, Redux Toolkit"
 
         },
         {
             id:2,
             src:movie,
             link:"https://movieland-tnzx.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/MovieLand/tree/master/src"
+            code:"https://github.com/Ukwubuiwe-Solomon/MovieLand/tree/master/src",
+            tool:"React, Css, API"
         },
         {
             id:3,
             src:Capture,
             link:"https://food-delivery-app1-6mjp.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/Food_Delivery_App"
+            code:"https://github.com/Ukwubuiwe-Solomon/Food_Delivery_App",
+            tool:"React, Css, Context API"
             
         },
         {
             id:4,
             src:grocery_app,
             link:"https://grocery-bud-9sor.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/GroceryBud/tree/master/src/component"
+            code:"https://github.com/Ukwubuiwe-Solomon/GroceryBud/tree/master/src/component",
+            tool:"React, Tailwind Css, CRUD-App"
         },
         {
             id:5,
             src:meals,
             link:"https://meals-site.onrender.com/",
-            code:"https://github.com/Ukwubuiwe-Solomon/Meal-App-for-a-Restuarant/tree/master/src/component"
+            code:"https://github.com/Ukwubuiwe-Solomon/Meal-App-for-a-Restuarant",
+            tool:"React, Tailwind Css"
         },
         {
             id:6,
-            src:Youtube_clone,
-            link:"https://ukwubuiwe-solomon.github.io/Youtube-clone-app-html-css/",
-            code:"https://github.com/Ukwubuiwe-Solomon/Youtube-clone-app-html-css"
+            src:gym,
+            link:"https://gym-typescript-app.onrender.com/",
+            code:"https://github.com/Ukwubuiwe-Solomon/gym-typescript",
+            tool:"React, Tailwind Css, TypeScript, Vite"
             
         },
        
@@ -62,7 +68,7 @@ const Portfolio = () => {
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
-                {portfolios.map(({id, src, link, code})=>(
+                {portfolios.map(({id, src, link, code, tool})=>(
                     <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                     <img src={src} alt='name' className='rounded-md duration-200 hover:scale-105'/>
                     <div className='flex justify-center items-center'>
@@ -71,9 +77,9 @@ const Portfolio = () => {
 
                         <a href={code} target='_blank' rel="noreferrer" className='w-1/2 md:px-6 py-3 md:m-4 duration-200 hover:scale-105'>Code</a>
                         
-                        
                     </div>
-                    
+                        
+                    <p className='flex ml-4 text-orange-300'>{tool}</p>
                     
                 </div>
                 ))}
